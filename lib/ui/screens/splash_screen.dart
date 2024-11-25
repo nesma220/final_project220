@@ -1,4 +1,4 @@
-import 'package:final_project/onbording_screen.dart'; // استيراد صفحة Onboarding
+import 'package:final_project/ui/screens/onbording_screen.dart'; // استيراد صفحة Onboarding
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

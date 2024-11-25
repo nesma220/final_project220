@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart'; // استيراد صفحة SplashScreen
+import 'ui/screens/splash_screen.dart'; // استيراد صفحة SplashScreen
 
 void main() {
   runApp(MyApp());
