@@ -1,3 +1,4 @@
+import 'package:final_project/cor/constants.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -114,16 +115,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     print("Get Started Clicked!");
                   }
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple, // لون الزر
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30), // حواف مستديرة
-                  ),
-                  minimumSize:
-                      const Size(double.infinity, 60), // عرض كامل وارتفاع ثابت
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 15), // مسافة داخلية
-                ),
+                style: Constants.elevatedButton(),
                 child: Text(
                   _currentPage == _pages.length - 1 ? "Get Started" : "Next",
                   style: const TextStyle(
