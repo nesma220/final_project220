@@ -2,6 +2,8 @@ import 'package:final_project/ui/screens/onbording_screen.dart'; // استيرا
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -11,10 +13,10 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // الانتقال إلى صفحة Onboarding بعد 3 ثوانٍ
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => OnboardingScreen()),
+        MaterialPageRoute(builder: (context) => const OnboardingScreen()),
       );
     });
   }
